@@ -56,10 +56,9 @@ This button updates the encoding files used by the facial recognition attendance
 
 After clicking this button a window popps up where the student's information is filled in by the user which is to be used during attendance. The last attendance date is automatically filled as a reference starting point. Clicking "Submit" automatically updates the database. The student's total attendance is updated automatically during the attendance marking process moving forward. By providing the student ID, corrections to the database can be made through the system rather than manually modifying the database. Note that the student ID must be the same as the roll number.
 
-![image](https://github.com/user-attachments/assets/b1850cb0-b6a3-40ab-b17f-00eee771517f)
+![image](https://github.com/user-attachments/assets/b9847698-0ea2-495d-b87e-f5c7bb835492)
 
-![image](https://github.com/user-attachments/assets/a2fa7e7e-e09d-4928-959a-7ce025b8d77a)
-
+![image](https://github.com/user-attachments/assets/2023bfb2-8c8c-4849-b9bc-b27b43389d5a)
 
 ## Complete System Working
 
@@ -89,5 +88,14 @@ WHile the current system is scalable, it is only upt a certain extent. When the 
 
 ![image](https://github.com/user-attachments/assets/df33420e-c4fb-43fd-b563-26d051bc7797)
 
+## Running on your own local system.
 
-Thats ALL! Hope this project helps you out if you need it!
+As mentioned before you will require Python version 3.7 to run this project ( any Python ver below 3.8 will work fine i used Python 3.7.6. There are a few issue importing dlls with higher Python version at the moment on Windows. As for running it on Linux with higher versions it might be possible but i did not test this. This project was deployed on Jetson Nano 4Gb so i used its global repository to download and setup Python as the other versions required to built manually.
+
+face_recoognition library requires Dlib and Cmake to be installed as well. On Linux, specifically for Jetson, there is a small change that needs to be in the source file of the code. This can be found on the official article of using face_recogtnition on Jetson on the medium website. 
+
+As for how to use the system, just simply paste 216x216 images of the students in the Images folder and click the update system button or you can use the Add Student feature as well. Make sure you have your AccountServiceKey.json in the root directory of the project as well. Additionallly for better security you can create a simple text file that imports all appropriate URLs for the system to communicate with firebase or just paste them directly into the code ( I donot recomend doing this even though this is how I've done it because I had to explain this properly during a demo video. Its best not to show show the AccountServiceKey.jason or your URLs since it can be a potential security risk. 
+
+The System was deployed on a test enviornment on FireBase.
+
+## Thats ALL! Hope this project helps you out if you need it!
