@@ -5,6 +5,8 @@ I built this project following Murtaza's Workshop - Robotics and AI on YouTube a
 
 This is my Final Year Project presented for my BE in Avionics Engineering in 2024 at the Institute of Space Technology. The project aimed to develop an AI-based Attendance System tailored for the Avionics Department, specifically to alleviate administrative burdens, particularly within the Final Year Project Lab. The system is designed to be efficient, contactless, and hygienic, addressing the need for enhanced safety and operational ease. It offers scalability with minimal modifications, providing a robust prototype for departmental use. The project's objective was to create a working prototype that can be further refined and fully deployed across the department.
 
+https://github.com/user-attachments/assets/ff24a78f-896f-4056-847b-6f3e0aca2422
+
 ## Features
 
 The main interface for the attendance system was created using PySimpleGUI which provides a consolidated menu to launch every implemented feature and also displays the outputs on the side which ensures the system is running as expected.
